@@ -25,7 +25,7 @@
 
     <h1>Doneer</h1>
    <a href="http://google.com">google</a>
-    <form id="testform" method="POST" action="{{url('submit')}}">
+    <form id="testform" method="POST" action="{{url('submit')}}" target="_blank">
     <!-- <form id="testform" method="POST" action="{{url('/')}}"> -->
         @csrf
         Naam: <input type="text" name="naam" id=""><br>
