@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {{-- <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127716083-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-127716083-2');
-    </script> --}}
-
+   
 
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -34,8 +25,8 @@
 
     <h1>Doneer</h1>
    <a href="http://google.com">google</a>
-    <!-- <form id="testform" method="POST" action="{{url('submit')}}"> -->
-    <form id="testform" method="POST" action="{{url('/')}}">
+    <form id="testform" method="POST" action="{{url('submit')}}">
+    <!-- <form id="testform" method="POST" action="{{url('/')}}"> -->
         @csrf
         Naam: <input type="text" name="naam" id=""><br>
         <input type="radio" name="bedrag" value="25"> 25 euro<br>

@@ -17,9 +17,9 @@ Route::get('/', function () {
 });
 
 
-Route::post('/', function (Request $request) {
+Route::post('/submit', function (Request $request) {
     // dd($request->input('naam'));
-    return view('welcome');
+    return redirect()->to('bedankt');
 });
 
 Route::get('/bedankt', function () {
