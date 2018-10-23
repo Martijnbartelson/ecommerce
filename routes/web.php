@@ -23,6 +23,6 @@ Route::post('/submit', function (Request $request) {
 });
 
 Route::get('/bedankt', function () {
-    dd(Session::get('bedrag'));
-    return view('bedankt');
+   
+    return view('bedankt', ['bedrag' => Session::get('bedrag')]);
 });
