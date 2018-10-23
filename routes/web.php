@@ -18,10 +18,11 @@ Route::get('/', function () {
 
 
 Route::post('/submit', function (Request $request) {
-    // dd($request->input('naam'));
-    return redirect()->to('bedankt');
+    
+    return redirect()->to('bedankt')->with( ['bedrag' => $request->input('bedrag')] );;
 });
 
 Route::get('/bedankt', function () {
+    dd(Session::get('bedrag'));
     return view('bedankt');
 });
